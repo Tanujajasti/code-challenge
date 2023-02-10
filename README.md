@@ -33,8 +33,8 @@ Setup Working Application:
 
     1. Install the required tools and libraries
     2. To launch the virtual environment, run `pipenv shell`
-    3. To insert Data run `python insert_data.py`
-    4. To start the API run `python app.py` which will start the Flask server and integrate with SQLite DB
+    3. To insert Data, run `python insert_data.py`
+    4. To start the API, run `python app.py` which will start the Flask server and integrate with SQLite DB
     5. Import the Postman Collection and run the examples, below are the Sample API requests
         a. http://127.0.0.1:5000/api/weather/stats?year=2014
         b. http://127.0.0.1:5000/api/weather/stats?year=2014&station_id=USC00110338
@@ -47,5 +47,5 @@ Setup Working Application:
 - Creating API as a lambda function
 - To expose Lambda func as API Gateway and configure, AWS SAM template can be used.
 - Data can be stored and accessed from AWS Redshift
-    - Also, S3 can be used as a file sourse and that can be loaded into RS through COPY command
+    - Also, S3 can be used as a file source and that can be loaded into AWS Redshift through COPY command
 - Connection String/creds can be stored in the Secrets Manager for the security

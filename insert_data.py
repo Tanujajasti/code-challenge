@@ -57,7 +57,9 @@ def main(files):
 
         if records_to_insert:
             cur.execute(
-                f"INSERT or IGNORE INTO {TGT_TABLE} SELECT null, '{weather_station}', * FROM {STG_TABLE}"
+                f"""INSERT or IGNORE INTO {TGT_TABLE} 
+                SELECT null, '{weather_station}', record_date, max_temp/10 as max_temp, min_temp/10 as min_temp, precipitation/100 as precipitation
+                FROM {STG_TABLE}"""
             )
 
         print(f"Current target table record count: {get_table_count(TGT_TABLE)}")
@@ -82,9 +84,9 @@ def main_stats():
 
 
 if __name__ == "__main__":
-    exec_query_from_file("./ddl/1_stg_create_table.sql")
-    exec_query_from_file("./ddl/1_tgt_create_table.sql")
-    exec_query_from_file("./ddl/3_create_stats_table.sql")
+    exec_query_from_file("./ddl/stg_create_table.sql")
+    exec_query_from_file("./ddl/tgt_create_table.sql")
+    exec_query_from_file("./ddl/create_stats_table.sql")
 
     files = os.listdir(os.path.join(os.getcwd(), "wx_data"))
 

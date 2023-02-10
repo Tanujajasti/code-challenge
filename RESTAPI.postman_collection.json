@@ -1,0 +1,143 @@
+{
+	"info": {
+		"_postman_id": "f76f4c77-4ad7-498f-be48-9ccd83b45bbf",
+		"name": "APPO",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "WEATHER-DATA",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://127.0.0.1:5000/api/weather?date=20140101&station_id=USC00110338&limit=10",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "5000",
+					"path": [
+						"api",
+						"weather"
+					],
+					"query": [
+						{
+							"key": "date",
+							"value": "20140101"
+						},
+						{
+							"key": "station_id",
+							"value": "USC00110338"
+						},
+						{
+							"key": "limit",
+							"value": "10"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "WEATHER-STATS",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://127.0.0.1:5000/api/weather/stats?year=2014&station_id=USC00110338",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "5000",
+					"path": [
+						"api",
+						"weather",
+						"stats"
+					],
+					"query": [
+						{
+							"key": "year",
+							"value": "2014"
+						},
+						{
+							"key": "station_id",
+							"value": "USC00110338"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "WEATHER-DATA - Only Date",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://127.0.0.1:5000/api/weather?date=20140101&limit=10",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "5000",
+					"path": [
+						"api",
+						"weather"
+					],
+					"query": [
+						{
+							"key": "date",
+							"value": "20140101"
+						},
+						{
+							"key": "limit",
+							"value": "10"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "WEATHER-STATS - Only Year",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://127.0.0.1:5000/api/weather/stats?year=2014",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "5000",
+					"path": [
+						"api",
+						"weather",
+						"stats"
+					],
+					"query": [
+						{
+							"key": "year",
+							"value": "2014"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

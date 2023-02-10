@@ -5,6 +5,7 @@ name = "pypi"
 
 [packages]
 unicodecsv = "*"
+black = "*"
 
 [dev-packages]
 

@@ -6,6 +6,10 @@ name = "pypi"
 [packages]
 unicodecsv = "*"
 black = "*"
+flask = "*"
+flask-marshmallow = "*"
+flask-restful = "*"
+flask-sqlalchemy = "*"
 
 [dev-packages]
 

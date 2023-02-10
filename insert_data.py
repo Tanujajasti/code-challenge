@@ -88,6 +88,7 @@ if __name__ == "__main__":
 
     files = os.listdir(os.path.join(os.getcwd(), "wx_data"))
 
+    # Inserting data into Stg and Target tables
     start_time = datetime.now()
     main(files)
     end_time = datetime.now()
@@ -95,7 +96,6 @@ if __name__ == "__main__":
     print()
 
     # Inserting the stats table data
-
     print("Started Inserting the stats table data...")
     start_time = datetime.now()
     main_stats()

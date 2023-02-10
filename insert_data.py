@@ -78,7 +78,7 @@ def main_stats():
         on mn_t.weather_station = tot_pr.weather_station and mn_t.record_year = tot_pr.record_year
         """
     )
-    print(f"Records inserted into stats table: {get_table_count(STATS_TABLE)}")
+    print(f"Record count of stats table: {get_table_count(STATS_TABLE)}")
 
 
 if __name__ == "__main__":

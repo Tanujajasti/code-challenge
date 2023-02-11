@@ -24,9 +24,10 @@ Project Structure:
     3) yld_data - Input folder with yield data files
     4) Pipfile
     5) Pipfile.lock (Auto-generated lock file)
-    6) main.db - local SQLite Database file
-    7) RESTAPI.postman_collection.json - Postman Collection to test the Rest API 
-    8) README.md
+    6) insert_data.py - Loads the data from txt files into target table and stats table
+    7) main.db - local SQLite Database file
+    8) RESTAPI.postman_collection.json - Postman Collection to test the Rest API 
+    9) README.md
 
 
 Setup Working Application:
